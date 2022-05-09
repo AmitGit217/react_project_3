@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AmitGit217.github.io/react_project_3/static/css/main.073c9b0a.css",
-    "main.js": "/AmitGit217.github.io/react_project_3/static/js/main.1e26f501.js",
-    "static/js/787.f3489dfd.chunk.js": "/AmitGit217.github.io/react_project_3/static/js/787.f3489dfd.chunk.js",
-    "static/media/logo.svg": "/AmitGit217.github.io/react_project_3/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/AmitGit217.github.io/react_project_3/index.html",
-    "main.073c9b0a.css.map": "/AmitGit217.github.io/react_project_3/static/css/main.073c9b0a.css.map",
-    "main.1e26f501.js.map": "/AmitGit217.github.io/react_project_3/static/js/main.1e26f501.js.map",
-    "787.f3489dfd.chunk.js.map": "/AmitGit217.github.io/react_project_3/static/js/787.f3489dfd.chunk.js.map"
+    "main.css": "/react_project_3/static/css/main.073c9b0a.css",
+    "main.js": "/react_project_3/static/js/main.07ce67f9.js",
+    "static/js/787.f3489dfd.chunk.js": "/react_project_3/static/js/787.f3489dfd.chunk.js",
+    "static/media/logo.svg": "/react_project_3/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react_project_3/index.html",
+    "main.073c9b0a.css.map": "/react_project_3/static/css/main.073c9b0a.css.map",
+    "main.07ce67f9.js.map": "/react_project_3/static/js/main.07ce67f9.js.map",
+    "787.f3489dfd.chunk.js.map": "/react_project_3/static/js/787.f3489dfd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.1e26f501.js"
+    "static/js/main.07ce67f9.js"
   ]
 }
