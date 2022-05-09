@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  color: rgb(0, 0, 0);
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.headerLogo__image {
+  width: 60px;
+  height: 60px;
+}
