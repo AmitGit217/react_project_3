@@ -20,3 +20,10 @@
   width: 60px;
   height: 60px;
 }
+
+@media screen and (max-width: 425px) {
+  .header {
+    font-size: 12px;
+    flex-direction: column;
+  }
+}

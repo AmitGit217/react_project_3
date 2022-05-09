@@ -11,7 +11,7 @@ export default function Header() {
           src={trollFace}
           alt="troll face"
         />
-        <h1 className={headerCSS.headerLogo__title}>Meme Generator</h1>
+        <h1 className={headerCSS.headerLogo__title}>Random Meme Generator</h1>
       </div>
       <h2 className={headerCSS.header__subtitle}>React Course - Project 3</h2>
     </header>
