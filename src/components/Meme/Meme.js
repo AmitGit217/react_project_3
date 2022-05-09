@@ -1,12 +1,15 @@
 import React from "react";
 import memeCSS from "./Meme.module.css";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Meme() {
   const [memeText, setMemeText] = useState({
     topText: "",
     bottomText: "",
+    image: "https://i.imgflip.com/3lmzyx.jpg",
   });
+
   const inputChange = (event) => {
     const { name, value } = event.target;
     setMemeText((preText) => ({
@@ -14,6 +17,23 @@ export default function Meme() {
       [name]: value,
     }));
   };
+  const [memes, setMemes] = useState([]);
+  // API for our memes
+  useEffect(() => {
+    fetch("https://api.imgflip.com/get_memes")
+      .then((res) => res.json())
+      .then((data) => setMemes(data.data.memes));
+  }, []);
+
+  const getRandomMeme = () => {
+    const randomNumber = Math.floor(Math.random() * memes.length);
+    const url = memes[randomNumber].url;
+    setMemeText((preValue) => ({
+      ...preValue,
+      image: url,
+    }));
+  };
+
   return (
     <main className={memeCSS.meme}>
       <form className={memeCSS.memeForm}>
@@ -34,7 +54,9 @@ export default function Meme() {
           onChange={inputChange}
         />
       </form>
-      <button className={memeCSS.meme__button}>Get a new meme image 🖼</button>
+      <button onClick={getRandomMeme} className={memeCSS.meme__button}>
+        Get a new meme image 🖼
+      </button>
       <div className={memeCSS.memeImage}>
         <p
           className={`${memeCSS.memeImage__topText} ${memeCSS.memeImage__text}`}
@@ -48,7 +70,7 @@ export default function Meme() {
         </p>
         <img
           className={memeCSS.memeImage__image}
-          src="https://imgflip.com/s/meme/Blank-Comic-Panel-1x2.png"
+          src={memeText.image}
           alt="meme"
         />
       </div>
